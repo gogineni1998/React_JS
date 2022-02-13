@@ -19,7 +19,7 @@ const Stage_1 = () => {
 
 	const validate = (value) => {
 		if (value === "") {
-			setError([false, "please add name"]);
+			setError([false, "please type something"]);
 			return false;
 		} else if (value.length <= 2) {
 			setError([false, "min length should be 3"]);
