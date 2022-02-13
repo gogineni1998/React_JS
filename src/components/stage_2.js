@@ -5,9 +5,6 @@ const Stage_2 = () => {
 	let context = useContext(MyContext);
 	const [looser, setLooser] = useState({billPayee : context.getlooser()})
 
-	const generateLooser = () => {
-		
-	}
 	return (
 		<>
             <div className="result_wrapper">
