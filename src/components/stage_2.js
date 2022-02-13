@@ -11,7 +11,7 @@ const Stage_2 = () => {
 	return (
 		<>
             <div className="result_wrapper">
-            <h3>The Looser is </h3>
+            <h3>The Looser will be </h3>
 			<div>{looser.billPayee}</div>
             </div>
             
