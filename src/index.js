@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from './App'
-import { MyProvider } from './context';
-
+import App from "./App";
+import { MyProvider } from "./context";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Main = () => {
-  return(
-    <MyProvider>
-      <App/>
-    </MyProvider>
-    
-  )
-}
-ReactDOM.render(<Main />, document.getElementById('root'));
-
-
+	return (
+		<MyProvider>
+			<ToastContainer />
+			<App />
+		</MyProvider>
+	);
+};
+ReactDOM.render(<Main />, document.getElementById("root"));

@@ -1,5 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
-import { Button, Form, Alert, CloseButton, ListGroup } from "react-bootstrap";
+import { Form, Alert, ListGroup } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 import { MyContext } from "../context";
 
@@ -33,7 +34,10 @@ const Stage_1 = () => {
 		if (context.obj.players.length >= 3) {
 			context.changeStage();
 		} else {
-			setError([false, "Minimum 3 players"]);
+			toast.error("Please add atleast 3 players", {
+				position: toast.POSITION.TOP_LEFT,
+				autoClose: 2000,
+			});
 		}
 	};
 
