@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
 import { MyContext } from "./context";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Stage_1 from "./components/stage_1";
-import Stage_2 from "./components/stage_2";
+import StageOne from "./components/stage_1";
+import StageTwo from "./components/stage_2";
 import './App.css'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className="wrapper">
       <div className="center-wrapper">
         <h1>Who Pays the Bill?</h1>
-        { value.obj.stage === 1 ? <Stage_1/> : <Stage_2/> }
+        { value.obj.stage === 1 ? <StageOne/> : <StageTwo/> }
       </div>
     </div>
   )   
